@@ -1,8 +1,7 @@
 import os
 import sys
 
-# enter your directory here :
-directory = r"F:\COURSES\sharif-ssa-ML\session05"
+directory = sys.argv[2]
 
 
 def get_files(directory):
