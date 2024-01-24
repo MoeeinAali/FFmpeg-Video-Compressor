@@ -5,7 +5,7 @@ This script allows you to compress all video files in a directory using the FFmp
 ## How to Use
 
 1. Install prerequisites:
-    - Install `Python`
+    - [Install `Python` on Windows](#Installing-FFmpeg-on-Windows)
     - Install `FFmpeg`
 
 2. Download the script:
@@ -41,3 +41,31 @@ This script allows you to compress all video files in a directory using the FFmp
 **Note:** This script is suitable for video files only and requires ffmpeg installation.
 
 For more information about using ffmpeg, visit the [official ffmpeg website](https://ffmpeg.org/).
+
+
+
+
+# Installing FFmpeg on Windows
+
+1. **Download FFmpeg:**
+   - Click on [this link](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z) to download the `FFmpeg-git-full.7z` file. You may need a VPN or a proxy if the website is blocked in your region.
+
+2. **Extract the downloaded file:**
+   - Unzip the downloaded file and rename the extracted folder to `FFmpeg`.
+
+3. **Move the folder to C drive:**
+   - Move the `FFmpeg` folder to the `C:\` drive.
+
+4. **Run Command Prompt as an Administrator:**
+   - Open the Command Prompt with administrative privileges.
+
+5. **Set the PATH environment variable:**
+   - Run the following command in the Command Prompt:
+     ```bash
+     setx /m PATH "C:\FFmpeg\bin;%PATH%"
+     ```
+
+6. **Restart your computer:**
+   - Restart your computer to apply the changes.
+
+After completing these steps, ffmpeg should be installed on your system. You can use it in the Command Prompt for various video processing tasks.
