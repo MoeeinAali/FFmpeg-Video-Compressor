@@ -8,7 +8,7 @@ This script allows you to compress all video files in a directory using the FFmp
     - Install `Python`
     - Install `FFmpeg`
       * on [Windows](#Installing-FFmpeg-on-Windows)
-      * on [Linux](#-Installing-FFmpeg-on-Linux)
+      * on [Linux](https://github.com/MoeeinAali/FFmpeg-Video-Compressor/tree/main?tab=readme-ov-file#installing-ffmpeg-on-linux)
       
 
 2. Download the script:
