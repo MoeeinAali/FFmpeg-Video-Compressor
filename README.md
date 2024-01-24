@@ -5,8 +5,8 @@ This script allows you to compress all video files in a directory using the FFmp
 ## How to Use
 
 1. Install prerequisites:
-    - Install Python
-    - Install ffmpeg
+    - Install `Python`
+    - Install `FFmpeg`
 
 2. Download the script:
     ```bash
