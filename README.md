@@ -5,8 +5,11 @@ This script allows you to compress all video files in a directory using the FFmp
 ## How to Use
 
 1. Install prerequisites:
-    - [Install `Python` on Windows](#Installing-FFmpeg-on-Windows)
+    - Install `Python`
     - Install `FFmpeg`
+      * on [Windows](#Installing-FFmpeg-on-Windows)
+      * on [Linux](#-Installing-FFmpeg-on-Linux)
+      
 
 2. Download the script:
     ```bash
@@ -68,4 +71,69 @@ For more information about using ffmpeg, visit the [official ffmpeg website](htt
 6. **Restart your computer:**
    - Restart your computer to apply the changes.
 
-After completing these steps, ffmpeg should be installed on your system. You can use it in the Command Prompt for various video processing tasks.
+After completing these steps, FFmpeg should be installed on your system. You can use it in the Command Prompt for various video processing tasks.
+
+# Installing FFmpeg on Linux
+
+To install FFmpeg on Linux, you can use the package manager specific to your Linux distribution.
+
+## Ubuntu/Debian:
+
+1. Open a terminal.
+
+2. Update the package list:
+    ```bash
+    sudo apt-get update
+    ```
+
+3. Install FFmpeg:
+    ```bash
+    sudo apt-get install FFmpeg
+    ```
+
+## CentOS/RHEL:
+
+1. Open a terminal.
+
+2. Enable the EPEL repository:
+    ```bash
+    sudo yum install epel-release
+    ```
+
+3. Install FFmpeg:
+    ```bash
+    sudo yum install FFmpeg
+    ```
+
+## Fedora:
+
+1. Open a terminal.
+
+2. Install FFmpeg:
+    ```bash
+    sudo dnf install FFmpeg
+    ```
+
+## Arch Linux:
+
+1. Open a terminal.
+
+2. Install FFmpeg:
+    ```bash
+    sudo pacman -S FFmpeg
+    ```
+
+## Generic Installation:
+
+If your distribution doesn't have FFmpeg in its default repositories, you can download a static build:
+
+1. Download the static build from the official FFmpeg website or use a package manager like snap or flatpak.
+
+2. Extract the downloaded file and move the `FFmpeg` binary to a directory in your system's PATH.
+
+3. Confirm the installation by running:
+    ```bash
+    FFmpeg -version
+    ```
+
+These instructions should help you install FFmpeg on various Linux distributions.
