@@ -22,7 +22,7 @@ for file in files:
                                os.path.splitext(file)[0] + "_compressed.mp4")
 
     command = (
-        'ffmpeg -i "{input}" -r "{resolution}" -vf "scale=-2:720" -c:v libx265 -crf 28 -c:a libopus -b:a 32K -strict experimental -max_muxing_queue_size 1024 "{output}"'
-    ).format(resolution=int(sys.argv[1]), input=input_file, output=output_file)
+        'ffmpeg -i "{input}" -r "{frameRate}" -vf "scale=-2:720" -c:v libx265 -crf 28 -c:a libopus -b:a 32K -strict experimental -max_muxing_queue_size 1024 "{output}"'
+    ).format(frameRate=int(sys.argv[1]), input=input_file, output=output_file)
 
     os.system(command)
